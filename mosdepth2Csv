@@ -1,0 +1,27 @@
+#!/bin/bash
+# Script to retrieve coverage files with Mosdepth thresholds and generate CSV.
+# By João Pitta (jlpitta82@gmail.com)
+# At Fiocruz (Recife - PE - Brazil)
+# February 28, 2024 (first version)
+# February 28, 2024 (last update)
+
+# Main loop
+for FILES in $(ls *.thresholds.bed.gz)
+do
+    echo "Processando arquivo: $FILES"
+    SNAME=$(echo $FILES | sed 's/-1.thresholds.bed.gz//')
+    echo "Gerando arquivo $SNAME.csv"
+    zcat $FILES > $SNAME.csv
+done
+
+# Compressing files into a single zip file
+FSUFIX=$(date | awk -F' ' '{print $2$3"_"$4}' | sed 's/://g')
+echo "Gerando Mosdepth_$FSUFIX.zip"
+zip Mosdepth_$FSUFIX.zip *.csv
+
+# Cleaning CSV files
+rm -f *.csv
+
+echo "Process done."
+
+
