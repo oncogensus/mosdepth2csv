@@ -3,3 +3,8 @@
 
 # Usage:
 
+To use mosdepth, first download the script via git clone:
+```
+git clone
+```
+
