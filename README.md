@@ -5,6 +5,6 @@
 
 To use mosdepth, first download the script via git clone:
 ```
-git clone
+git clone https://github.com/jlpitta/mosdepth2csv.git
 ```
 
