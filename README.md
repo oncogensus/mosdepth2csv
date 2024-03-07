@@ -12,11 +12,11 @@ Inside the newly downloaded mosdepth2csv directory, you can find not only the mo
 
 To test the script, simply run the mosdepth2csv script with one of the options below:
 ```
-./mosdepth
+./mosdepth2Csv
 ```
 or
 ```
-bash mosdepth
+bash mosdepth2Csv
 ```
 To facilitate the use of the script, add the script's path to the PATH environment variable or create a symbolic link in the user's /bin folder.
 
