@@ -1,5 +1,5 @@
 # Descrição
-O "Mosdepth2csv" é um script desenvolvido para processar arquivos nomeados como "thresholds.bed.gz", gerados pela ferramenta mosdepth, que é configurada com o parâmetro --threshold. O objetivo deste script é extrair informações relevantes desses arquivos e transformá-las no formato CSV (valores separados por vírgulas). Posteriormente, esses arquivos CSV são agrupados e comprimidos em um arquivo zip, para facilitar o armazenamento ou a distribuição. Esse script funciona como uma ferramenta para converter e organizar os dados produzidos pelo mosdepth em um formato mais acessível e gerenciável.
+O "Mosdepth2csv" é um script desenvolvido para processar arquivos nomeados como "thresholds.bed.gz", gerados pela ferramenta mosdepth, que é configurada com o parâmetro --threshold. O script extrai informações de cobertura/profundidade desses arquivos e agrupa em arquivo CSV (valores separados por vírgulas), com coberturas de 1x, 10x, 20x e 30x. Posteriormente, esses arquivos CSV são agrupados e comprimidos em um arquivo zip, para facilitar o armazenamento ou a distribuição. Esse script funciona como uma ferramenta para converter e organizar os dados produzidos pelo mosdepth em um formato mais acessível e gerenciável.
 
 # Uso:
 
